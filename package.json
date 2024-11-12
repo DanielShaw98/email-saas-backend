@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "test": "jest"
   },
   "author": "Daniel Shaw",
   "license": "ISC",
@@ -19,16 +20,22 @@
     "liquidjs": "^10.18.0",
     "mongoose": "^8.8.1",
     "nodemailer": "^6.9.16",
-    "redis": "^4.7.0"
+    "redis": "^4.7.0",
+    "supertest": "^7.0.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^22.9.0",
     "@types/nodemailer": "^6.4.16",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "jest-mock-req-res": "^1.0.2",
     "nodemon": "^3.1.7",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3"
